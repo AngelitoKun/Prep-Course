@@ -123,6 +123,11 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if (numero - Math.floor(numero) == 0){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function fizzBuzz(numero) {
@@ -139,6 +144,23 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  if ((num1 == 0) || (num2 == 0) || (num3 == 0)) {
+    return "Error";
+  } else {
+    if ((num1 > num2) && (num1 > num3) && (num1 > 0) && (num2 > 0) && (num3 > 0)) {
+      return "Número 1 es mayor y positivo";
+    }
+    if ((num1 < 0) || (num2 < 0) || (num3 < 0)) {
+      return "Hay negativos";
+    }
+    if ((num3 > num1) && (num3 > num2)) {
+      return num3 + 1;
+    }
+    if (((num1 == 0 || num2 == 0 || num3 == 0) && (num1 > num2 && num1 > num3 && num1 > 0) && 
+    (num1 < 0 || num2 < 0 || num3 < 0) && (num3 > num1 && num3 > num2)) === false) {
+      return false;
+    }
+  }
 }
 
 function esPrimo(numero) {
@@ -153,14 +175,18 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+  if (valor === true){
+    return "Soy verdadero";
+  } else {
+    return "Soy falso";
+  }
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  
+
 }
 
 function tieneTresDigitos(numero){
@@ -173,6 +199,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let i = 0;
+  do {
+    numero + 5;
+    i + 1;
+  } while (i <= 8);
+  return numero;
 }
 
 
