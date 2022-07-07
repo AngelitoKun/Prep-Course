@@ -10,7 +10,7 @@
   * Son elementos que pueden reservar un espacio en la memoria para almacenar un dato de cualquier tipo, ya sea numérico, texto, númerico con coma flotante, booleano (true / false), etcétera.
 * **Strings**
   * Es el término en inglés para referirse a la Cadena de Caractéres, texto que va desde letras hasta símbolos especiales como el "@" (arroba), o el "&" (ampersand).
-* **Funciones (argumentos,** return**)**
+* **Funciones (argumentos,** return **)**
   * Las funciones son procesos definidos para llevar a cabo alguna tarea en específico, suelen recibir **argumentos** y pueden **retornar** (return) algún valor o bien pueden no retornar ninguno. los argumentos son variables que la función requiere para poder llevar a cabo el proceso deseado, el return nos entrega el resultado de ese proceso, un ejemplo es la función *suma()*.
 
     `function suma(x, y) {return x + y;}`
